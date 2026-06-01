@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How It Works — Strata Works</title>
+  <meta name="description" content="See how Strata Works delivers seamless maintenance for homeowners and businesses. Simple booking, on-time arrivals, 90-day guarantee, and detailed commercial reporting." />
+  <meta property="og:title" content="How It Works — Strata Works" />
+  <meta property="og:description" content="Simple. Fast. Guaranteed. Four easy steps for homeowners and businesses." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/tokens.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="main-nav" aria-label="Main navigation">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__logo" aria-label="Strata Works home">
+      <img src="assets/logo.svg" alt="Strata Works" class="nav__logo-img" width="160" height="36" />
+    </a>
+    <ul class="nav__links" role="list">
+      <li><a href="commercial.html" class="nav__link">For Business</a></li>
+      <li><a href="residential.html" class="nav__link">For Home</a></li>
+      <li><a href="services.html" class="nav__link">Services</a></li>
+      <li><a href="pricing.html" class="nav__link">Pricing</a></li>
+      <li><a href="about.html" class="nav__link">About</a></li>
+    </ul>
+    <div class="nav__actions">
+      <a href="contact.html" class="btn btn--outline btn--sm">Get a Quote</a>
+      <a href="tel:+18005555678" class="btn btn--primary btn--sm">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.63 3.36 2 2 0 0 1 3.6 1.18h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.84a16 16 0 0 0 6.29 6.29l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        Call Now
+      </a>
+      <button class="nav__hamburger" id="nav-hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="nav__mobile" id="nav-mobile-menu" role="dialog" aria-label="Mobile navigation">
+  <div class="nav__mobile-links">
+    <a href="commercial.html" class="nav__mobile-link">For Business</a>
+    <a href="residential.html" class="nav__mobile-link">For Home</a>
+    <a href="services.html" class="nav__mobile-link">Services</a>
+    <a href="pricing.html" class="nav__mobile-link">Pricing</a>
+    <a href="how-it-works.html" class="nav__mobile-link">How It Works</a>
+    <a href="about.html" class="nav__mobile-link">About</a>
+    <a href="contact.html" class="nav__mobile-link">Contact</a>
+  </div>
+  <div class="nav__mobile-ctas">
+    <a href="contact.html" class="btn btn--navy btn--lg" style="width:100%;justify-content:center;">Get a Free Quote</a>
+    <a href="tel:+18005555678" class="btn btn--outline btn--lg" style="width:100%;justify-content:center;">📞 Call 1-800-555-5678</a>
+  </div>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero" aria-labelledby="page-hero-heading">
+  <div class="container">
+    <div class="page-hero__content">
+      <div class="section-label hero-enter hero-enter-1" style="color:rgba(255,255,255,0.65);">Our Process</div>
+      <h1 class="page-hero__title hero-enter hero-enter-2" id="page-hero-heading">
+        Simple. Fast.<br /><span class="accent">Guaranteed.</span>
+      </h1>
+      <p class="page-hero__subtitle hero-enter hero-enter-3">
+        Whether you're a homeowner with a leaky faucet or a property manager with 50 locations — our process is designed to be effortless on your end. No guesswork, no price surprises, no chasing contractors.
+      </p>
+      <div class="page-hero__actions hero-enter hero-enter-4">
+        <a href="contact.html" class="btn btn--primary btn--lg">Get Started</a>
+        <a href="tel:+18005555678" class="btn btn--outline-white btn--lg">📞 1-800-555-5678</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOR HOMEOWNERS -->
+<section class="section" aria-labelledby="hiw-home-heading">
+  <div class="container">
+    <div class="text-center" style="margin-bottom:var(--sp-12);">
+      <div class="section-label reveal">For Homeowners</div>
+      <h2 class="section-title reveal delay-1" id="hiw-home-heading">Four Steps to a <span class="accent">Fixed Home</span></h2>
+      <p class="section-subtitle reveal delay-2">From booking to completion — the entire experience is designed around your convenience, not ours.</p>
+    </div>
+
+    <div style="display:flex;flex-direction:column;gap:var(--sp-10);max-width:800px;margin:0 auto;">
+
+      <div class="reveal" style="display:grid;grid-template-columns:80px 1fr;gap:var(--sp-8);align-items:flex-start;">
+        <div style="width:80px;height:80px;background:var(--c-navy);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:var(--fs-3xl);font-weight:800;flex-shrink:0;">1</div>
+        <div>
+          <div style="font-size:var(--fs-xl);font-weight:700;color:var(--c-navy);margin-bottom:var(--sp-2);">Book Your Service</div>
+          <p style="color:var(--c-text-muted);margin-bottom:var(--sp-4);">Schedule online in under 2 minutes, call our team directly, or download the Strata Works app. Available 24/7. Tell us what you need and choose a time that works for you — we offer flexible morning, afternoon, and evening windows.</p>
+          <ul style="list-style:none;padding:0;display:flex;flex-direction:column;gap:var(--sp-2);">
+            <li style="display:flex;gap:var(--sp-3);color:var(--c-text-muted);font-size:var(--fs-sm);"><span style="color:var(--c-orange);">→</span> Online booking available around the clock</li>
+            <li style="display:flex;gap:var(--sp-3);color:var(--c-text-muted);font-size:var(--fs-sm);"><span style="color:var(--c-orange);">→</span> Appointment confirmed within 1 hour</li>
+            <li style="display:flex;gap:var(--sp-3);color:var(--c-text-muted);font-size:var(--fs-sm);"><span style="color:var(--c-orange);">→</span> Technician name, photo, and bio sent to you</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="reveal delay-1" style="display:grid;grid-template-columns:80px 1fr;gap:var(--sp-8);align-items:flex-start;">
+        <div style="width:80px;height:80px;background:var(--c-navy);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:var(--fs-3xl);font-weight:800;flex-shrink:0;">2</div>
+        <div>
+          <div style="font-size:var(--fs-xl);font-weight:700;color:var(--c-navy);margin-bottom:var(--sp-2);">Get Confirmed</div>
+          <p style="color:var(--c-text-muted);margin-bottom:var(--sp-4);">Same-day appointment confirmation sent via text and email. You'll receive your technician's name, photo, license number, and a live ETA notification on the day of service — so you always know who's coming and when.</p>
+          <ul style="list-style:none;padding:0;display:flex;flex-direction:column;gap:var(--sp-2);">
+            <li style="display:flex;gap:var(--sp-3);color:var(--c-text-muted);font-size:var(--fs-sm);"><span style="color:var(--c-orange);">→</span> Text and email confirmation immediately</li>
+            <li style="display:flex;gap:var(--sp-3);color:var(--c-text-muted);font-size:var(--fs-sm);"><span style="color:var(--c-orange);">→</span> Technician profile delivered to your inbox</li>
+            <li style="display:flex;gap:var(--sp-3);color:var(--c-text-muted);font-size:var(--fs-sm);"><span style="color:var(--c-orange);">→</span> Day-of arrival ETA notification</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="reveal delay-2" style="display:grid;grid-template-columns:80px 1fr;gap:var(--sp-8);align-items:flex-start;">
+        <div style="width:80px;height:80px;background:var(--c-navy);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:var(--fs-3xl);font-weight:800;flex-shrink:0;">3</div>
+        <div>
+          <div style="font-size:var(--fs-xl);font-weight:700;color:var(--c-navy);margin-bottom:var(--sp-2);">Service Day</div>
+          <p style="color:var(--c-text-muted);margin-bottom:var(--sp-4);">Your uniformed technician arrives in the agreed window. Before touching anything, they walk you through the job and give you an exact flat-rate price. No surprises. No "we'll see how it goes." Your approval is required before any work begins.</p>
+          <ul style="list-style:none;padding:0;display:flex;flex-direction:column;gap:var(--sp-2);">
+            <li style="display:flex;gap:var(--sp-3);color:var(--c-text-muted);font-size:var(--fs-sm);"><span style="color:var(--c-orange);">→</span> Exact flat-rate price quoted upfront</li>
+            <li style="display:flex;gap:var(--sp-3);color:var(--c-text-muted);font-size:var(--fs-sm);"><span style="color:var(--c-orange);">→</span> No work starts without your approval</li>
+            <li style="display:flex;gap:var(--sp-3);color:var(--c-text-muted);font-size:var(--fs-sm);"><span style="color:var(--c-orange);">→</span> Uniformed and background-checked technician</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="reveal delay-3" style="display:grid;grid-template-columns:80px 1fr;gap:var(--sp-8);align-items:flex-start;">
+        <div style="width:80px;height:80px;background:var(--c-orange);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:var(--fs-3xl);font-weight:800;flex-shrink:0;">4</div>
+        <div>
+          <div style="font-size:var(--fs-xl);font-weight:700;color:var(--c-navy);margin-bottom:var(--sp-2);">Done &amp; Guaranteed</div>
+          <p style="color:var(--c-text-muted);margin-bottom:var(--sp-4);">Work is completed to your satisfaction. A digital receipt is emailed immediately. Every job is backed by our 90-day labor guarantee — if anything we fixed has an issue within 90 days, we return and fix it at no charge, period.</p>
+          <ul style="list-style:none;padding:0;display:flex;flex-direction:column;gap:var(--sp-2);">
+            <li style="display:flex;gap:var(--sp-3);color:var(--c-text-muted);font-size:var(--fs-sm);"><span style="color:var(--c-orange);">→</span> Digital receipt sent instantly</li>
+            <li style="display:flex;gap:var(--sp-3);color:var(--c-text-muted);font-size:var(--fs-sm);"><span style="color:var(--c-orange);">→</span> 90-day labor guarantee on all work</li>
+            <li style="display:flex;gap:var(--sp-3);color:var(--c-text-muted);font-size:var(--fs-sm);"><span style="color:var(--c-orange);">→</span> One-click rebooking for future services</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOR BUSINESSES -->
+<section class="section section--soft" aria-labelledby="hiw-biz-heading">
+  <div class="container">
+    <div class="text-center" style="margin-bottom:var(--sp-12);">
+      <div class="section-label reveal">For Businesses</div>
+      <h2 class="section-title reveal delay-1" id="hiw-biz-heading">Commercial Service<br /><span class="accent">Without the Complexity</span></h2>
+      <p class="section-subtitle reveal delay-2">From initial quote to monthly performance reports — our commercial process is built for property managers, facility directors, and operations teams.</p>
+    </div>
+
+    <div style="display:flex;flex-direction:column;gap:var(--sp-10);max-width:800px;margin:0 auto;">
+
+      <div class="reveal" style="display:grid;grid-template-columns:80px 1fr;gap:var(--sp-8);align-items:flex-start;">
+        <div style="width:80px;height:80px;background:var(--c-navy);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:var(--fs-3xl);font-weight:800;flex-shrink:0;">1</div>
+        <div>
+          <div style="font-size:var(--fs-xl);font-weight:700;color:var(--c-navy);margin-bottom:var(--sp-2);">Request a Quote</div>
+          <p style="color:var(--c-text-muted);margin-bottom:var(--sp-4);">Submit your property details, square footage, number of locations, and service requirements online or call our commercial team. A dedicated account manager will reach out within 4 business hours and prepare a detailed proposal within 24 hours.</p>
+          <ul style="list-style:none;padding:0;display:flex;flex-direction:column;gap:var(--sp-2);">
+            <li style="display:flex;gap:var(--sp-3);color:var(--c-text-muted);font-size:var(--fs-sm);"><span style="color:var(--c-orange);">→</span> Initial contact within 4 business hours</li>
+            <li style="display:flex;gap:var(--sp-3);color:var(--c-text-muted);font-size:var(--fs-sm);"><span style="color:var(--c-orange);">→</span> Full proposal delivered within 24 hours</li>
+            <li style="display:flex;gap:var(--sp-3);color:var(--c-text-muted);font-size:var(--fs-sm);"><span style="color:var(--c-orange);">→</span> No obligation, no pressure</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="reveal delay-1" style="display:grid;grid-template-columns:80px 1fr;gap:var(--sp-8);align-items:flex-start;">
+        <div style="width:80px;height:80px;background:var(--c-navy);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:var(--fs-3xl);font-weight:800;flex-shrink:0;">2</div>
+        <div>
+          <div style="font-size:var(--fs-xl);font-weight:700;color:var(--c-navy);margin-bottom:var(--sp-2);">Contract Setup</div>
+          <p style="color:var(--c-text-muted);margin-bottom:var(--sp-4);">Work with your dedicated account manager to finalize scope, pricing, SLA terms, and scheduling preferences. We handle multi-site complexity, custom trade mixes, and budget constraints — the contract is tailored entirely to your operation.</p>
+          <ul style="list-style:none;padding:0;display:flex;flex-direction:column;gap:var(--sp-2);">
+            <li style="display:flex;gap:var(--sp-3);color:var(--c-text-muted);font-size:var(--fs-sm);"><span style="color:var(--c-orange);">→</span> Custom scope, pricing, and SLA terms</li>
+            <li style="display:flex;gap:var(--sp-3);color:var(--c-text-muted);font-size:var(--fs-sm);"><span style="color:var(--c-orange);">→</span> Multi-site and multi-trade capable</li>
+            <li style="display:flex;gap:var(--sp-3);color:var(--c-text-muted);font-size:var(--fs-sm);"><span style="color:var(--c-orange);">→</span> Dedicated account manager assigned</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="reveal delay-2" style="display:grid;grid-template-columns:80px 1fr;gap:var(--sp-8);align-items:flex-start;">
+        <div style="width:80px;height:80px;background:var(--c-navy);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:var(--fs-3xl);font-weight:800;flex-shrink:0;">3</div>
+        <div>
+          <div style="font-size:var(--fs-xl);font-weight:700;color:var(--c-navy);margin-bottom:var(--sp-2);">Scheduled Maintenance</div>
+          <p style="color:var(--c-text-muted);margin-bottom:var(--sp-4);">Our licensed crew is dispatched on the agreed schedule. Every visit generates a work order with time-stamped documentation, technician sign-off, and photo evidence. You can track work orders in real time through your client portal.</p>
+          <ul style="list-style:none;padding:0;display:flex;flex-direction:column;gap:var(--sp-2);">
+            <li style="display:flex;gap:var(--sp-3);color:var(--c-text-muted);font-size:var(--fs-sm);"><span style="color:var(--c-orange);">→</span> Dispatched licensed crews on schedule</li>
+            <li style="display:flex;gap:var(--sp-3);color:var(--c-text-muted);font-size:var(--fs-sm);"><span style="color:var(--c-orange);">→</span> Work orders with photo documentation</li>
+            <li style="display:flex;gap:var(--sp-3);color:var(--c-text-muted);font-size:var(--fs-sm);"><span style="color:var(--c-orange);">→</span> Real-time client portal access</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="reveal delay-3" style="display:grid;grid-template-columns:80px 1fr;gap:var(--sp-8);align-items:flex-start;">
+        <div style="width:80px;height:80px;background:var(--c-orange);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:var(--fs-3xl);font-weight:800;flex-shrink:0;">4</div>
+        <div>
+          <div style="font-size:var(--fs-xl);font-weight:700;color:var(--c-navy);margin-bottom:var(--sp-2);">Monthly Reporting</div>
+          <p style="color:var(--c-text-muted);margin-bottom:var(--sp-4);">Every month you receive a comprehensive performance report: service usage, response times vs. SLA, upcoming scheduled work, budget tracking, and renewal options. Your account manager reviews it with you quarterly.</p>
+          <ul style="list-style:none;padding:0;display:flex;flex-direction:column;gap:var(--sp-2);">
+            <li style="display:flex;gap:var(--sp-3);color:var(--c-text-muted);font-size:var(--fs-sm);"><span style="color:var(--c-orange);">→</span> Monthly service usage and SLA report</li>
+            <li style="display:flex;gap:var(--sp-3);color:var(--c-text-muted);font-size:var(--fs-sm);"><span style="color:var(--c-orange);">→</span> Upcoming scheduled work calendar</li>
+            <li style="display:flex;gap:var(--sp-3);color:var(--c-text-muted);font-size:var(--fs-sm);"><span style="color:var(--c-orange);">→</span> Quarterly account manager review</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section" aria-labelledby="faq-heading">
+  <div class="container" style="max-width:800px;">
+    <div class="text-center" style="margin-bottom:var(--sp-12);">
+      <div class="section-label reveal">FAQ</div>
+      <h2 class="section-title reveal delay-1" id="faq-heading">Common <span class="accent">Questions</span></h2>
+    </div>
+
+    <div style="display:flex;flex-direction:column;gap:var(--sp-6);">
+
+      <div class="reveal" style="border:1px solid var(--c-border);border-radius:var(--radius-lg);padding:var(--sp-6);">
+        <div style="font-weight:700;color:var(--c-navy);font-size:var(--fs-base);margin-bottom:var(--sp-3);">How fast can you respond to emergencies?</div>
+        <p style="color:var(--c-text-muted);">Our average on-site emergency response time is 2 hours — 24 hours a day, 7 days a week, 365 days a year. Commercial clients on SLA contracts have contractually guaranteed response windows. For residential customers, emergency calls are prioritized in our dispatch queue above scheduled work.</p>
+      </div>
+
+      <div class="reveal delay-1" style="border:1px solid var(--c-border);border-radius:var(--radius-lg);padding:var(--sp-6);">
+        <div style="font-weight:700;color:var(--c-navy);font-size:var(--fs-base);margin-bottom:var(--sp-3);">Are your technicians licensed and insured?</div>
+        <p style="color:var(--c-text-muted);">Yes — every Strata Works technician holds the appropriate state trade license for their specialty (plumbing, electrical, HVAC, etc.) and undergoes a full criminal background check and drug screening before their first assignment. Strata Works carries $5 million in general liability insurance, plus workers' compensation on all employees.</p>
+      </div>
+
+      <div class="reveal delay-2" style="border:1px solid var(--c-border);border-radius:var(--radius-lg);padding:var(--sp-6);">
+        <div style="font-weight:700;color:var(--c-navy);font-size:var(--fs-base);margin-bottom:var(--sp-3);">Do you offer maintenance contracts?</div>
+        <p style="color:var(--c-text-muted);">Absolutely. We offer residential home care plans starting at $49/month and fully customized commercial preventive maintenance contracts for businesses of any size. Commercial contracts include multi-trade coverage, a dedicated account manager, SLA-backed response times, and monthly performance reports.</p>
+      </div>
+
+      <div class="reveal delay-1" style="border:1px solid var(--c-border);border-radius:var(--radius-lg);padding:var(--sp-6);">
+        <div style="font-weight:700;color:var(--c-navy);font-size:var(--fs-base);margin-bottom:var(--sp-3);">What areas do you serve?</div>
+        <p style="color:var(--c-text-muted);">Strata Works operates in all 50 states. Our headquarters is in Chicago, IL with regional dispatch hubs across the country. Whether you have a single property in rural Montana or 50 locations across multiple states, we have coverage. Contact our team for availability in your specific market.</p>
+      </div>
+
+      <div class="reveal delay-2" style="border:1px solid var(--c-border);border-radius:var(--radius-lg);padding:var(--sp-6);">
+        <div style="font-weight:700;color:var(--c-navy);font-size:var(--fs-base);margin-bottom:var(--sp-3);">What's your service guarantee?</div>
+        <p style="color:var(--c-text-muted);">All labor performed by Strata Works technicians carries a 90-day guarantee. If any work we complete has a defect or failure within 90 days of the service date, we return and fix it at no charge — no questions asked. This applies to residential and commercial jobs. Parts warranties vary by manufacturer and are in addition to our labor guarantee.</p>
+      </div>
+
+      <div class="reveal delay-3" style="border:1px solid var(--c-border);border-radius:var(--radius-lg);padding:var(--sp-6);">
+        <div style="font-weight:700;color:var(--c-navy);font-size:var(--fs-base);margin-bottom:var(--sp-3);">Can I manage multiple properties through one account?</div>
+        <p style="color:var(--c-text-muted);">Yes. Our commercial client portal is built for multi-site management. You can view service history, open work orders, upcoming schedules, and invoices across all your locations in one dashboard. We also offer multi-site volume discounts — ask your account manager for details on portfolio pricing.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA STRIP -->
+<section class="cta-strip" aria-labelledby="hiw-cta-heading">
+  <div class="container">
+    <div style="max-width:640px;">
+      <div class="section-label" style="color:rgba(255,255,255,0.5);margin-bottom:var(--sp-4);">Ready to Get Started?</div>
+      <h2 class="section-title" id="hiw-cta-heading">Start Your First Service.<br /><span style="color:var(--c-orange);">It Only Takes 2 Minutes.</span></h2>
+      <p class="section-subtitle">Book online, call us, or request a commercial quote — our team is ready.</p>
+      <div class="cta-strip__actions">
+        <a href="contact.html" class="btn btn--primary btn--lg">Get a Quote <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></a>
+        <a href="tel:+18005555678" class="btn btn--outline-white btn--lg">📞 1-800-555-5678</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <div class="footer__logo">
+          <div class="footer__logo-name">Strata<span>Works</span></div>
+        </div>
+        <p class="footer__desc">Professional maintenance services for commercial properties and homes across the United States. Licensed, insured, and available 24/7.</p>
+      </div>
+      <div>
+        <div class="footer__col-title">Commercial</div>
+        <div class="footer__links">
+          <a href="commercial.html" class="footer__link">Overview</a>
+          <a href="commercial.html#hvac" class="footer__link">HVAC</a>
+          <a href="commercial.html#electrical" class="footer__link">Electrical</a>
+          <a href="commercial.html#plumbing" class="footer__link">Plumbing</a>
+          <a href="commercial.html#contracts" class="footer__link">PM Contracts</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer__col-title">Residential</div>
+        <div class="footer__links">
+          <a href="residential.html" class="footer__link">Overview</a>
+          <a href="residential.html#handyman" class="footer__link">Handyman</a>
+          <a href="residential.html#plumbing" class="footer__link">Plumbing</a>
+          <a href="pricing.html" class="footer__link">Home Plans</a>
+          <a href="residential.html#cleaning" class="footer__link">Cleaning</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer__col-title">Company</div>
+        <div class="footer__links">
+          <a href="about.html" class="footer__link">About Us</a>
+          <a href="how-it-works.html" class="footer__link">How It Works</a>
+          <a href="pricing.html" class="footer__link">Pricing</a>
+          <a href="contact.html" class="footer__link">Contact</a>
+        </div>
+        <div style="margin-top:var(--sp-5);">
+          <div class="footer__col-title">Emergency</div>
+          <a href="tel:+18005555678" style="color:var(--c-orange);font-weight:700;font-size:var(--fs-base);">1-800-555-5678</a>
+          <div style="font-size:var(--fs-xs);color:rgba(255,255,255,0.4);margin-top:2px;">Available 24/7</div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div>© 2025 Strata Works LLC. All rights reserved.</div>
+      <div class="footer__bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Sitemap</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/contact-widget.js"></script>
+</body>
+</html>

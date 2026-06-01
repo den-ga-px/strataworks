@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>All Services — Strata Works</title>
+  <meta name="description" content="Browse all Strata Works commercial and residential maintenance services. HVAC, electrical, plumbing, handyman, cleaning, painting and more — one team, every trade." />
+  <meta property="og:title" content="All Services — Strata Works" />
+  <meta property="og:description" content="Every trade. One team. Browse commercial and residential services from Strata Works." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/tokens.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="main-nav" aria-label="Main navigation">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__logo" aria-label="Strata Works home">
+      <img src="assets/logo.svg" alt="Strata Works" class="nav__logo-img" width="160" height="36" />
+    </a>
+    <ul class="nav__links" role="list">
+      <li><a href="commercial.html" class="nav__link">For Business</a></li>
+      <li><a href="residential.html" class="nav__link">For Home</a></li>
+      <li><a href="services.html" class="nav__link nav__link--active">Services</a></li>
+      <li><a href="pricing.html" class="nav__link">Pricing</a></li>
+      <li><a href="about.html" class="nav__link">About</a></li>
+    </ul>
+    <div class="nav__actions">
+      <a href="contact.html" class="btn btn--outline btn--sm">Get a Quote</a>
+      <a href="tel:+18005555678" class="btn btn--primary btn--sm">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.63 3.36 2 2 0 0 1 3.6 1.18h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.84a16 16 0 0 0 6.29 6.29l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        Call Now
+      </a>
+      <button class="nav__hamburger" id="nav-hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="nav__mobile" id="nav-mobile-menu" role="dialog" aria-label="Mobile navigation">
+  <div class="nav__mobile-links">
+    <a href="commercial.html" class="nav__mobile-link">For Business</a>
+    <a href="residential.html" class="nav__mobile-link">For Home</a>
+    <a href="services.html" class="nav__mobile-link">Services</a>
+    <a href="pricing.html" class="nav__mobile-link">Pricing</a>
+    <a href="how-it-works.html" class="nav__mobile-link">How It Works</a>
+    <a href="about.html" class="nav__mobile-link">About</a>
+    <a href="contact.html" class="nav__mobile-link">Contact</a>
+  </div>
+  <div class="nav__mobile-ctas">
+    <a href="contact.html" class="btn btn--navy btn--lg" style="width:100%;justify-content:center;">Get a Free Quote</a>
+    <a href="tel:+18005555678" class="btn btn--outline btn--lg" style="width:100%;justify-content:center;">📞 Call 1-800-555-5678</a>
+  </div>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero" aria-labelledby="page-hero-heading">
+  <div class="container">
+    <div class="page-hero__content">
+      <div class="section-label hero-enter hero-enter-1" style="color:rgba(255,255,255,0.65);">All Services</div>
+      <h1 class="page-hero__title hero-enter hero-enter-2" id="page-hero-heading">
+        Every Trade.<br /><span class="accent">One Team.</span>
+      </h1>
+      <p class="page-hero__subtitle hero-enter hero-enter-3">
+        Whether you manage a commercial portfolio or just need something fixed at home — Strata Works has licensed, background-checked technicians for every trade. Browse our full service catalog below.
+      </p>
+      <div class="page-hero__actions hero-enter hero-enter-4">
+        <a href="contact.html" class="btn btn--primary btn--lg">Get a Quote</a>
+        <a href="tel:+18005555678" class="btn btn--outline-white btn--lg">📞 1-800-555-5678</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMMERCIAL SERVICES -->
+<section class="section" aria-labelledby="comm-catalog-heading">
+  <div class="container">
+    <div style="margin-bottom:var(--sp-10);">
+      <div class="section-label reveal">For Business</div>
+      <h2 class="section-title reveal delay-1" id="comm-catalog-heading">Commercial Services<br /><span class="accent">B2B</span></h2>
+      <p class="section-subtitle reveal delay-2" style="max-width:640px;">Enterprise-grade maintenance solutions for office buildings, retail, restaurants, multifamily, warehouses, hospitality, and medical facilities. Single vendor. One invoice. SLA-backed.</p>
+      <div style="margin-top:var(--sp-6);">
+        <a href="commercial.html" class="btn btn--navy reveal delay-2">Explore Commercial Overview</a>
+      </div>
+    </div>
+
+    <div class="grid-3">
+      <div class="service-card reveal delay-1">
+        <div class="service-card__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+        </div>
+        <div class="service-card__title">HVAC Maintenance</div>
+        <p class="service-card__body">Scheduled PM programs, quarterly inspections, filter programs, emergency repair. All commercial system types supported.</p>
+        <a href="commercial.html#hvac" class="service-card__link">Learn more <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></a>
+      </div>
+      <div class="service-card reveal delay-2">
+        <div class="service-card__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93L17.66 6.34M4.93 19.07l1.41-1.41M12 2v2M12 20v2M2 12h2M20 12h2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41"/></svg>
+        </div>
+        <div class="service-card__title">Electrical Services</div>
+        <p class="service-card__body">Panel maintenance, LED lighting retrofits, emergency lighting compliance, circuit installation, and load monitoring.</p>
+        <a href="commercial.html#electrical" class="service-card__link">Learn more <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></a>
+      </div>
+      <div class="service-card reveal delay-3">
+        <div class="service-card__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/></svg>
+        </div>
+        <div class="service-card__title">Plumbing &amp; Drainage</div>
+        <p class="service-card__body">Backflow prevention, grease trap service, drain jetting, water heater maintenance, and emergency leak response.</p>
+        <a href="commercial.html#plumbing" class="service-card__link">Learn more <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></a>
+      </div>
+      <div class="service-card reveal delay-1">
+        <div class="service-card__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9h18v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9z"/><path d="M3 9l2.45-4.9A2 2 0 0 1 7.24 3h9.52a2 2 0 0 1 1.8 1.1L21 9"/><path d="M12 3v6"/></svg>
+        </div>
+        <div class="service-card__title">Janitorial &amp; Cleaning</div>
+        <p class="service-card__body">Daily, weekly, or monthly commercial cleaning for offices, retail, restaurants, and medical facilities.</p>
+        <a href="commercial.html#janitorial" class="service-card__link">Learn more <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></a>
+      </div>
+      <div class="service-card reveal delay-2">
+        <div class="service-card__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22V12"/><path d="M5 12H2a10 10 0 0 0 20 0h-3"/><path d="M8 12a4 4 0 0 0 8 0"/></svg>
+        </div>
+        <div class="service-card__title">Grounds &amp; Exterior</div>
+        <p class="service-card__body">Landscaping, parking lot upkeep, pressure washing, snow removal, and exterior lighting maintenance.</p>
+        <a href="commercial.html#grounds" class="service-card__link">Learn more <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></a>
+      </div>
+      <div class="service-card reveal delay-3">
+        <div class="service-card__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+        </div>
+        <div class="service-card__title">Painting &amp; Surfaces</div>
+        <p class="service-card__body">Interior and exterior painting, epoxy floors, parking striping, drywall repair. Off-hours scheduling available.</p>
+        <a href="commercial.html#painting" class="service-card__link">Learn more <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></a>
+      </div>
+      <div class="service-card reveal delay-1">
+        <div class="service-card__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <div class="service-card__title">Emergency Response 24/7</div>
+        <p class="service-card__body">Round-the-clock dispatch for burst pipes, power failures, HVAC breakdowns, and structural emergencies. 2-hr avg response.</p>
+        <a href="tel:+18005555678" class="service-card__link">Call Now <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></a>
+      </div>
+      <div class="service-card reveal delay-2">
+        <div class="service-card__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+        </div>
+        <div class="service-card__title">Compliance Inspections</div>
+        <p class="service-card__body">Fire suppression testing, backflow certs, ADA reviews, elevator pit maintenance, and health code readiness — all documented.</p>
+        <a href="commercial.html#compliance" class="service-card__link">Learn more <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></a>
+      </div>
+      <div class="service-card reveal delay-3">
+        <div class="service-card__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+        </div>
+        <div class="service-card__title">PM Contracts</div>
+        <p class="service-card__body">Custom annual multi-trade maintenance programs. One monthly invoice, dedicated account manager, and SLA-backed service.</p>
+        <a href="commercial.html#contracts" class="service-card__link">Learn more <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RESIDENTIAL SERVICES -->
+<section class="section section--soft" aria-labelledby="res-catalog-heading">
+  <div class="container">
+    <div style="margin-bottom:var(--sp-10);">
+      <div class="section-label reveal">For Homeowners</div>
+      <h2 class="section-title reveal delay-1" id="res-catalog-heading">Residential Services<br /><span class="accent">B2C</span></h2>
+      <p class="section-subtitle reveal delay-2" style="max-width:640px;">Professional home maintenance from licensed, background-checked technicians. Flat-rate pricing, same-day availability, and a 90-day guarantee on every single job.</p>
+      <div style="margin-top:var(--sp-6);">
+        <a href="residential.html" class="btn btn--primary reveal delay-2">Explore Residential Overview</a>
+      </div>
+    </div>
+
+    <div class="grid-3">
+      <div class="service-card reveal delay-1">
+        <div class="service-card__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+        </div>
+        <div class="service-card__title">Handyman</div>
+        <p class="service-card__body">Furniture assembly, TV mounting, door repairs, drywall patching, caulking — knock out your whole to-do list in one visit.</p>
+        <a href="residential.html#handyman" class="service-card__link">Book now <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></a>
+      </div>
+      <div class="service-card reveal delay-2">
+        <div class="service-card__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/></svg>
+        </div>
+        <div class="service-card__title">Plumbing</div>
+        <p class="service-card__body">Leaky faucets, clogged drains, toilet repairs, water heater installation — emergency burst-pipe response available 24/7.</p>
+        <a href="residential.html#plumbing" class="service-card__link">Book now <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></a>
+      </div>
+      <div class="service-card reveal delay-3">
+        <div class="service-card__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93L17.66 6.34M4.93 19.07l1.41-1.41M12 2v2M12 20v2M2 12h2M20 12h2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41"/></svg>
+        </div>
+        <div class="service-card__title">Electrical</div>
+        <p class="service-card__body">Outlet and switch replacement, ceiling fan installation, light fixture upgrades, GFCI outlets, and minor panel work.</p>
+        <a href="residential.html#electrical" class="service-card__link">Book now <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></a>
+      </div>
+      <div class="service-card reveal delay-1">
+        <div class="service-card__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+        </div>
+        <div class="service-card__title">HVAC Service</div>
+        <p class="service-card__body">AC tune-ups, furnace checks, thermostat install, and seasonal system maintenance to keep your home comfortable.</p>
+        <a href="residential.html#hvac" class="service-card__link">Book now <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></a>
+      </div>
+      <div class="service-card reveal delay-2">
+        <div class="service-card__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+        </div>
+        <div class="service-card__title">Painting</div>
+        <p class="service-card__body">Interior room painting, accent walls, touch-up work, and cabinet refinishing. Low-VOC paints, zero mess, 90-day guarantee.</p>
+        <a href="residential.html#painting" class="service-card__link">Book now <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></a>
+      </div>
+      <div class="service-card reveal delay-3">
+        <div class="service-card__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg>
+        </div>
+        <div class="service-card__title">Appliance Repair</div>
+        <p class="service-card__body">Refrigerator, dishwasher, washer, dryer, oven, and microwave repair. Most major brands, fast same-visit fixes.</p>
+        <a href="contact.html" class="service-card__link">Book now <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></a>
+      </div>
+      <div class="service-card reveal delay-1">
+        <div class="service-card__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        </div>
+        <div class="service-card__title">Cleaning</div>
+        <p class="service-card__body">Deep clean, move-in/out clean, and recurring house cleaning. Eco-friendly products, background-checked cleaners.</p>
+        <a href="residential.html#cleaning" class="service-card__link">Book now <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></a>
+      </div>
+      <div class="service-card reveal delay-2">
+        <div class="service-card__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+        </div>
+        <div class="service-card__title">Smart Home</div>
+        <p class="service-card__body">Smart thermostat setup, video doorbell, smart locks, whole-home Wi-Fi optimization, and security camera mounting.</p>
+        <a href="contact.html" class="service-card__link">Book now <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></a>
+      </div>
+      <div class="service-card reveal delay-3">
+        <div class="service-card__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v6"/><path d="m4.93 10.93 4.24 4.24"/><path d="M2 18h6"/><path d="m14.83 15.17 4.24 4.24"/><path d="M22 18h-6"/><path d="m19.07 10.93-4.24 4.24"/></svg>
+        </div>
+        <div class="service-card__title">Seasonal Maintenance</div>
+        <p class="service-card__body">Spring and fall home checkups — gutters, weatherstripping, HVAC filters, caulking. Stay ahead of costly repairs.</p>
+        <a href="contact.html" class="service-card__link">Book now <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-strip" aria-labelledby="svc-cta-heading">
+  <div class="container">
+    <div style="max-width:640px;">
+      <div class="section-label" style="color:rgba(255,255,255,0.5);margin-bottom:var(--sp-4);">Not Sure Where to Start?</div>
+      <h2 class="section-title" id="svc-cta-heading">Talk to Our Team.<br /><span style="color:var(--c-orange);">We'll Figure It Out Together.</span></h2>
+      <p class="section-subtitle">Describe your property and what you need — we'll recommend the right service or package and get you a quote within 24 hours.</p>
+      <div class="cta-strip__actions">
+        <a href="contact.html" class="btn btn--primary btn--lg">Get a Free Quote <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></a>
+        <a href="tel:+18005555678" class="btn btn--outline-white btn--lg">📞 1-800-555-5678</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <div class="footer__logo">
+          <div class="footer__logo-name">Strata<span>Works</span></div>
+        </div>
+        <p class="footer__desc">Professional maintenance services for commercial properties and homes across the United States. Licensed, insured, and available 24/7.</p>
+      </div>
+      <div>
+        <div class="footer__col-title">Commercial</div>
+        <div class="footer__links">
+          <a href="commercial.html" class="footer__link">Overview</a>
+          <a href="commercial.html#hvac" class="footer__link">HVAC</a>
+          <a href="commercial.html#electrical" class="footer__link">Electrical</a>
+          <a href="commercial.html#plumbing" class="footer__link">Plumbing</a>
+          <a href="commercial.html#contracts" class="footer__link">PM Contracts</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer__col-title">Residential</div>
+        <div class="footer__links">
+          <a href="residential.html" class="footer__link">Overview</a>
+          <a href="residential.html#handyman" class="footer__link">Handyman</a>
+          <a href="residential.html#plumbing" class="footer__link">Plumbing</a>
+          <a href="pricing.html" class="footer__link">Home Plans</a>
+          <a href="residential.html#cleaning" class="footer__link">Cleaning</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer__col-title">Company</div>
+        <div class="footer__links">
+          <a href="about.html" class="footer__link">About Us</a>
+          <a href="how-it-works.html" class="footer__link">How It Works</a>
+          <a href="pricing.html" class="footer__link">Pricing</a>
+          <a href="contact.html" class="footer__link">Contact</a>
+        </div>
+        <div style="margin-top:var(--sp-5);">
+          <div class="footer__col-title">Emergency</div>
+          <a href="tel:+18005555678" style="color:var(--c-orange);font-weight:700;font-size:var(--fs-base);">1-800-555-5678</a>
+          <div style="font-size:var(--fs-xs);color:rgba(255,255,255,0.4);margin-top:2px;">Available 24/7</div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div>© 2025 Strata Works LLC. All rights reserved.</div>
+      <div class="footer__bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Sitemap</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/contact-widget.js"></script>
+</body>
+</html>

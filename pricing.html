@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pricing — Strata Works</title>
+  <meta name="description" content="Clear, transparent pricing for residential and commercial maintenance services. Home plans from $49/mo. Commercial contracts from $299/mo. No hidden fees, ever." />
+  <meta property="og:title" content="Pricing — Strata Works" />
+  <meta property="og:description" content="Clear pricing. No surprises. Residential plans from $49/mo, commercial from $299/mo." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/tokens.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <style>
+    .price-table { width:100%; border-collapse:collapse; margin-top:var(--sp-8); font-size:var(--fs-sm); }
+    .price-table th { background:var(--c-navy); color:#fff; padding:var(--sp-4) var(--sp-5); text-align:left; font-weight:600; }
+    .price-table td { padding:var(--sp-4) var(--sp-5); border-bottom:1px solid var(--c-border); color:var(--c-text); }
+    .price-table tr:last-child td { border-bottom:none; }
+    .price-table tr:nth-child(even) td { background:var(--c-soft); }
+    .price-table .price-col { font-weight:700; color:var(--c-navy); white-space:nowrap; }
+    .pricing-tabs { display:flex; gap:0; background:var(--c-soft); border-radius:var(--radius-lg); padding:4px; max-width:360px; margin:0 auto var(--sp-10); }
+    .pricing-tab { flex:1; padding:var(--sp-3) var(--sp-5); border:none; background:transparent; border-radius:calc(var(--radius-lg) - 2px); font-size:var(--fs-sm); font-weight:600; cursor:pointer; transition:all .2s; color:var(--c-text-muted); }
+    .pricing-tab.active { background:#fff; color:var(--c-navy); box-shadow:var(--shadow-sm); }
+    .pricing-panel { display:none; }
+    .pricing-panel.active { display:block; }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="main-nav" aria-label="Main navigation">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__logo" aria-label="Strata Works home">
+      <img src="assets/logo.svg" alt="Strata Works" class="nav__logo-img" width="160" height="36" />
+    </a>
+    <ul class="nav__links" role="list">
+      <li><a href="commercial.html" class="nav__link">For Business</a></li>
+      <li><a href="residential.html" class="nav__link">For Home</a></li>
+      <li><a href="services.html" class="nav__link">Services</a></li>
+      <li><a href="pricing.html" class="nav__link nav__link--active">Pricing</a></li>
+      <li><a href="about.html" class="nav__link">About</a></li>
+    </ul>
+    <div class="nav__actions">
+      <a href="contact.html" class="btn btn--outline btn--sm">Get a Quote</a>
+      <a href="tel:+18005555678" class="btn btn--primary btn--sm">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.63 3.36 2 2 0 0 1 3.6 1.18h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.84a16 16 0 0 0 6.29 6.29l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        Call Now
+      </a>
+      <button class="nav__hamburger" id="nav-hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="nav__mobile" id="nav-mobile-menu" role="dialog" aria-label="Mobile navigation">
+  <div class="nav__mobile-links">
+    <a href="commercial.html" class="nav__mobile-link">For Business</a>
+    <a href="residential.html" class="nav__mobile-link">For Home</a>
+    <a href="services.html" class="nav__mobile-link">Services</a>
+    <a href="pricing.html" class="nav__mobile-link">Pricing</a>
+    <a href="how-it-works.html" class="nav__mobile-link">How It Works</a>
+    <a href="about.html" class="nav__mobile-link">About</a>
+    <a href="contact.html" class="nav__mobile-link">Contact</a>
+  </div>
+  <div class="nav__mobile-ctas">
+    <a href="contact.html" class="btn btn--navy btn--lg" style="width:100%;justify-content:center;">Get a Free Quote</a>
+    <a href="tel:+18005555678" class="btn btn--outline btn--lg" style="width:100%;justify-content:center;">📞 Call 1-800-555-5678</a>
+  </div>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero" aria-labelledby="page-hero-heading">
+  <div class="container">
+    <div class="page-hero__content">
+      <div class="section-label hero-enter hero-enter-1" style="color:rgba(255,255,255,0.65);">Pricing</div>
+      <h1 class="page-hero__title hero-enter hero-enter-2" id="page-hero-heading">
+        Clear Pricing.<br /><span class="accent">No Surprises.</span>
+      </h1>
+      <p class="page-hero__subtitle hero-enter hero-enter-3">
+        Transparent flat-rate pricing for every service. Residential plans starting at $49/month, commercial contracts starting at $299/month. You know the price before we start — always.
+      </p>
+      <div class="page-hero__actions hero-enter hero-enter-4">
+        <a href="contact.html" class="btn btn--primary btn--lg">Get a Custom Quote</a>
+        <a href="tel:+18005555678" class="btn btn--outline-white btn--lg">📞 1-800-555-5678</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PLANS SECTION -->
+<section class="section" aria-labelledby="plans-main-heading">
+  <div class="container">
+    <div class="text-center" style="margin-bottom:var(--sp-10);">
+      <div class="section-label reveal">Membership Plans</div>
+      <h2 class="section-title reveal delay-1" id="plans-main-heading">Choose Your <span class="accent">Plan</span></h2>
+      <p class="section-subtitle reveal delay-2">Save on every service and enjoy priority scheduling, guaranteed response, and annual inspections.</p>
+    </div>
+
+    <!-- TABS -->
+    <div class="pricing-tabs reveal delay-2" role="tablist">
+      <button class="pricing-tab active" data-pricing-tab="residential" role="tab" aria-selected="true">🏠 Residential</button>
+      <button class="pricing-tab" data-pricing-tab="commercial" role="tab" aria-selected="false">🏢 Commercial</button>
+    </div>
+
+    <!-- RESIDENTIAL PLANS -->
+    <div class="pricing-panel active" id="pricing-residential">
+      <div class="grid-3" style="max-width:960px;margin:0 auto;">
+        <div class="pricing-card reveal delay-1">
+          <div class="pricing-card__label">Home Basic</div>
+          <div class="pricing-card__price"><span class="pricing-card__amount">$49</span><span class="pricing-card__period">/month</span></div>
+          <p class="pricing-card__desc">Perfect for homeowners who want priority booking, a discount on services, and an annual tune-up.</p>
+          <ul class="pricing-card__features">
+            <li class="pricing-feature">Priority scheduling (skip the queue)</li>
+            <li class="pricing-feature">10% discount on all services</li>
+            <li class="pricing-feature">Annual HVAC tune-up included</li>
+            <li class="pricing-feature">90-day labor guarantee on all work</li>
+            <li class="pricing-feature">Dedicated member support line</li>
+          </ul>
+          <a href="contact.html" class="btn btn--outline btn--lg" style="width:100%;justify-content:center;margin-top:auto;">Get Started</a>
+        </div>
+        <div class="pricing-card featured reveal delay-2">
+          <div class="pricing-badge">Most Popular</div>
+          <div class="pricing-card__label">Home Plus</div>
+          <div class="pricing-card__price"><span class="pricing-card__amount">$129</span><span class="pricing-card__period">/month</span></div>
+          <p class="pricing-card__desc">Complete home care plan — all the trades, all year long, unlimited visits. The best value for most homeowners.</p>
+          <ul class="pricing-card__features">
+            <li class="pricing-feature">Everything in Home Basic</li>
+            <li class="pricing-feature">Unlimited service calls (labor included)</li>
+            <li class="pricing-feature">Annual full-home inspection</li>
+            <li class="pricing-feature">Same-day priority dispatch</li>
+            <li class="pricing-feature">Free emergency visits (no call-out fee)</li>
+          </ul>
+          <a href="contact.html" class="btn btn--primary btn--lg" style="width:100%;justify-content:center;margin-top:auto;">Get Started</a>
+        </div>
+        <div class="pricing-card reveal delay-3">
+          <div class="pricing-card__label">Annual Plan</div>
+          <div class="pricing-card__price"><span class="pricing-card__amount">$999</span><span class="pricing-card__period">/year</span></div>
+          <p class="pricing-card__desc">Full-year coverage across all trades, paid annually for maximum savings and convenience.</p>
+          <ul class="pricing-card__features">
+            <li class="pricing-feature">Full year, all trades covered</li>
+            <li class="pricing-feature">Semi-annual full-home inspections</li>
+            <li class="pricing-feature">15% discount on all parts</li>
+            <li class="pricing-feature">Single annual invoice, no monthly billing</li>
+            <li class="pricing-feature">Priority emergency queue access</li>
+          </ul>
+          <a href="contact.html" class="btn btn--navy btn--lg" style="width:100%;justify-content:center;margin-top:auto;">Get Started</a>
+        </div>
+      </div>
+
+      <!-- À-LA-CARTE TABLE -->
+      <div style="max-width:760px;margin:var(--sp-14) auto 0;">
+        <div class="section-label reveal" style="text-align:center;margin-bottom:var(--sp-4);">À-La-Carte Pricing</div>
+        <h3 class="reveal delay-1" style="text-align:center;color:var(--c-navy);font-size:var(--fs-xl);font-weight:700;margin-bottom:var(--sp-2);">Common Service Rates</h3>
+        <p class="reveal delay-2" style="text-align:center;color:var(--c-text-muted);font-size:var(--fs-sm);margin-bottom:0;">Member discounts apply automatically. All prices are flat-rate, quoted upfront.</p>
+        <table class="price-table reveal delay-2">
+          <thead>
+            <tr>
+              <th>Service</th>
+              <th>Standard Rate</th>
+              <th>Member Rate</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Handyman (1 hr minimum)</td><td class="price-col">From $99</td><td class="price-col" style="color:var(--c-orange);">From $89</td></tr>
+            <tr><td>Plumbing service call</td><td class="price-col">$129</td><td class="price-col" style="color:var(--c-orange);">$116</td></tr>
+            <tr><td>Electrical service call</td><td class="price-col">$149</td><td class="price-col" style="color:var(--c-orange);">$134</td></tr>
+            <tr><td>HVAC tune-up</td><td class="price-col">$149</td><td class="price-col" style="color:var(--c-orange);">$134</td></tr>
+            <tr><td>Interior painting (per room)</td><td class="price-col">From $350</td><td class="price-col" style="color:var(--c-orange);">From $315</td></tr>
+            <tr><td>House cleaning (2BR/2BA)</td><td class="price-col">$179</td><td class="price-col" style="color:var(--c-orange);">$161</td></tr>
+            <tr><td>Appliance repair (diagnostic + labor)</td><td class="price-col">$149</td><td class="price-col" style="color:var(--c-orange);">$134</td></tr>
+          </tbody>
+        </table>
+        <p style="font-size:var(--fs-xs);color:var(--c-text-muted);margin-top:var(--sp-4);text-align:center;">Parts and materials billed separately at cost. Emergency call-out fee of $49 applies to non-member after-hours calls. Members on Home Plus plan have no call-out fees.</p>
+      </div>
+    </div>
+
+    <!-- COMMERCIAL PLANS -->
+    <div class="pricing-panel" id="pricing-commercial">
+      <div class="grid-3" style="max-width:960px;margin:0 auto;">
+        <div class="pricing-card reveal delay-1">
+          <div class="pricing-card__label">Starter</div>
+          <div class="pricing-card__price"><span class="pricing-card__amount" style="font-size:var(--fs-2xl);">From $299</span><span class="pricing-card__period">/month</span></div>
+          <p class="pricing-card__desc">Ideal for single-location businesses up to 5,000 sq ft needing core trade coverage.</p>
+          <ul class="pricing-card__features">
+            <li class="pricing-feature">Up to 5,000 sq ft coverage</li>
+            <li class="pricing-feature">HVAC, plumbing &amp; electrical</li>
+            <li class="pricing-feature">Monthly scheduled maintenance</li>
+            <li class="pricing-feature">24/7 emergency dispatch</li>
+            <li class="pricing-feature">Digital work order documentation</li>
+          </ul>
+          <a href="contact.html" class="btn btn--outline btn--lg" style="width:100%;justify-content:center;margin-top:auto;">Request Quote</a>
+        </div>
+        <div class="pricing-card featured reveal delay-2">
+          <div class="pricing-badge">Most Popular</div>
+          <div class="pricing-card__label">Professional</div>
+          <div class="pricing-card__price"><span class="pricing-card__amount" style="font-size:var(--fs-2xl);">From $699</span><span class="pricing-card__period">/month</span></div>
+          <p class="pricing-card__desc">The complete solution for growing businesses up to 20,000 sq ft who need all trades and a dedicated manager.</p>
+          <ul class="pricing-card__features">
+            <li class="pricing-feature">Up to 20,000 sq ft coverage</li>
+            <li class="pricing-feature">All trades included</li>
+            <li class="pricing-feature">Dedicated account manager</li>
+            <li class="pricing-feature">SLA-backed response times</li>
+            <li class="pricing-feature">Monthly performance reports</li>
+            <li class="pricing-feature">Janitorial services available</li>
+          </ul>
+          <a href="contact.html" class="btn btn--primary btn--lg" style="width:100%;justify-content:center;margin-top:auto;">Request Quote</a>
+        </div>
+        <div class="pricing-card reveal delay-3">
+          <div class="pricing-card__label">Enterprise</div>
+          <div class="pricing-card__price"><span class="pricing-card__amount" style="font-size:var(--fs-2xl);">Custom</span></div>
+          <p class="pricing-card__desc">Tailored for multi-site portfolios, large facilities, and organizations with complex maintenance needs.</p>
+          <ul class="pricing-card__features">
+            <li class="pricing-feature">Multi-site portfolio management</li>
+            <li class="pricing-feature">All trades, all locations</li>
+            <li class="pricing-feature">Custom SLA &amp; escalation protocols</li>
+            <li class="pricing-feature">Executive-level reporting</li>
+            <li class="pricing-feature">Multi-site volume discounts</li>
+            <li class="pricing-feature">Dedicated regional teams</li>
+          </ul>
+          <a href="contact.html" class="btn btn--navy btn--lg" style="width:100%;justify-content:center;margin-top:auto;">Contact Sales</a>
+        </div>
+      </div>
+      <p style="text-align:center;margin-top:var(--sp-8);font-size:var(--fs-sm);color:var(--c-text-muted);">All commercial plans are custom-quoted based on your property size, location, service mix, and SLA requirements. Prices shown are starting rates.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- PRICING FAQ -->
+<section class="section section--soft" aria-labelledby="pricing-faq-heading">
+  <div class="container" style="max-width:800px;">
+    <div class="text-center" style="margin-bottom:var(--sp-10);">
+      <div class="section-label reveal">Pricing FAQ</div>
+      <h2 class="section-title reveal delay-1" id="pricing-faq-heading">Billing <span class="accent">Questions</span></h2>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:var(--sp-5);">
+      <div class="reveal" style="border:1px solid var(--c-border);border-radius:var(--radius-lg);padding:var(--sp-6);background:#fff;">
+        <div style="font-weight:700;color:var(--c-navy);margin-bottom:var(--sp-3);">Are there any hidden fees?</div>
+        <p style="color:var(--c-text-muted);">Never. Strata Works quotes you a flat price before any work begins. You approve it, and that's exactly what you pay. Parts and materials are billed at cost with receipts — no markups. The only exception is a $49 after-hours emergency call-out fee for non-members, which is always disclosed upfront.</p>
+      </div>
+      <div class="reveal delay-1" style="border:1px solid var(--c-border);border-radius:var(--radius-lg);padding:var(--sp-6);background:#fff;">
+        <div style="font-weight:700;color:var(--c-navy);margin-bottom:var(--sp-3);">Can I cancel my residential plan?</div>
+        <p style="color:var(--c-text-muted);">Monthly residential plans (Home Basic and Home Plus) can be cancelled at any time with 30 days' notice — no cancellation penalties. Annual plans are non-refundable after the first 30 days but may be paused for up to 3 months at no charge. Contact your member support line to make changes.</p>
+      </div>
+      <div class="reveal delay-2" style="border:1px solid var(--c-border);border-radius:var(--radius-lg);padding:var(--sp-6);background:#fff;">
+        <div style="font-weight:700;color:var(--c-navy);margin-bottom:var(--sp-3);">How is billing handled for commercial clients?</div>
+        <p style="color:var(--c-text-muted);">Commercial clients receive a single consolidated monthly invoice covering all services, all locations, and all trades. Net-30 payment terms are standard. ACH, check, and major credit cards are accepted. Clients managing multiple properties receive one itemized invoice with line items per location.</p>
+      </div>
+      <div class="reveal delay-1" style="border:1px solid var(--c-border);border-radius:var(--radius-lg);padding:var(--sp-6);background:#fff;">
+        <div style="font-weight:700;color:var(--c-navy);margin-bottom:var(--sp-3);">Do member discounts apply to parts as well?</div>
+        <p style="color:var(--c-text-muted);">Home Basic and Home Plus members receive 10% off labor. Annual Plan members receive 15% off parts in addition to labor discounts. Commercial clients on Professional and Enterprise plans negotiate parts pricing as part of their contract scope. Parts are always billed at documented cost on all plans.</p>
+      </div>
+      <div class="reveal delay-2" style="border:1px solid var(--c-border);border-radius:var(--radius-lg);padding:var(--sp-6);background:#fff;">
+        <div style="font-weight:700;color:var(--c-navy);margin-bottom:var(--sp-3);">Is there a service call fee on top of the quoted price?</div>
+        <p style="color:var(--c-text-muted);">No. For all scheduled residential appointments, there is no separate service call fee — the price quoted includes the trip, labor, and any standard consumables. After-hours emergency calls carry a $49 call-out fee for non-members; this fee is waived for all Home Plus and Annual Plan members.</p>
+      </div>
+      <div class="reveal delay-3" style="border:1px solid var(--c-border);border-radius:var(--radius-lg);padding:var(--sp-6);background:#fff;">
+        <div style="font-weight:700;color:var(--c-navy);margin-bottom:var(--sp-3);">Can I get a quote without committing to a plan?</div>
+        <p style="color:var(--c-text-muted);">Absolutely. Residential and commercial quotes are completely free and carry no obligation. For homeowners, submit your request online and receive a fixed quote within hours. For commercial properties, our account team prepares a detailed proposal within 24 hours — no pressure, no commitment required.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-strip" aria-labelledby="pricing-cta-heading">
+  <div class="container">
+    <div style="max-width:640px;">
+      <div class="section-label" style="color:rgba(255,255,255,0.5);margin-bottom:var(--sp-4);">Get Your Custom Quote</div>
+      <h2 class="section-title" id="pricing-cta-heading">Not Sure Which Plan?<br /><span style="color:var(--c-orange);">Let's Figure It Out Together.</span></h2>
+      <p class="section-subtitle">Our team will assess your property, recommend the right level of coverage, and give you a clear quote — at no cost.</p>
+      <div class="cta-strip__actions">
+        <a href="contact.html" class="btn btn--primary btn--lg">Get a Free Quote <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></a>
+        <a href="tel:+18005555678" class="btn btn--outline-white btn--lg">📞 1-800-555-5678</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <div class="footer__logo">
+          <div class="footer__logo-name">Strata<span>Works</span></div>
+        </div>
+        <p class="footer__desc">Professional maintenance services for commercial properties and homes across the United States. Licensed, insured, and available 24/7.</p>
+      </div>
+      <div>
+        <div class="footer__col-title">Commercial</div>
+        <div class="footer__links">
+          <a href="commercial.html" class="footer__link">Overview</a>
+          <a href="commercial.html#hvac" class="footer__link">HVAC</a>
+          <a href="commercial.html#electrical" class="footer__link">Electrical</a>
+          <a href="commercial.html#plumbing" class="footer__link">Plumbing</a>
+          <a href="commercial.html#contracts" class="footer__link">PM Contracts</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer__col-title">Residential</div>
+        <div class="footer__links">
+          <a href="residential.html" class="footer__link">Overview</a>
+          <a href="residential.html#handyman" class="footer__link">Handyman</a>
+          <a href="residential.html#plumbing" class="footer__link">Plumbing</a>
+          <a href="pricing.html" class="footer__link">Home Plans</a>
+          <a href="residential.html#cleaning" class="footer__link">Cleaning</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer__col-title">Company</div>
+        <div class="footer__links">
+          <a href="about.html" class="footer__link">About Us</a>
+          <a href="how-it-works.html" class="footer__link">How It Works</a>
+          <a href="pricing.html" class="footer__link">Pricing</a>
+          <a href="contact.html" class="footer__link">Contact</a>
+        </div>
+        <div style="margin-top:var(--sp-5);">
+          <div class="footer__col-title">Emergency</div>
+          <a href="tel:+18005555678" style="color:var(--c-orange);font-weight:700;font-size:var(--fs-base);">1-800-555-5678</a>
+          <div style="font-size:var(--fs-xs);color:rgba(255,255,255,0.4);margin-top:2px;">Available 24/7</div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div>© 2025 Strata Works LLC. All rights reserved.</div>
+      <div class="footer__bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Sitemap</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/contact-widget.js"></script>
+<script>
+  // Pricing tab toggle
+  const pricingTabs = document.querySelectorAll('[data-pricing-tab]');
+  const pricingPanels = document.querySelectorAll('.pricing-panel');
+  pricingTabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      pricingTabs.forEach(t => { t.classList.remove('active'); t.setAttribute('aria-selected','false'); });
+      pricingPanels.forEach(p => p.classList.remove('active'));
+      tab.classList.add('active');
+      tab.setAttribute('aria-selected','true');
+      const target = tab.getAttribute('data-pricing-tab');
+      const panel = document.getElementById('pricing-' + target);
+      if (panel) panel.classList.add('active');
+    });
+  });
+</script>
+</body>
+</html>

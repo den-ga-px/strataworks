@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us — Strata Works</title>
+  <meta name="description" content="Learn about Strata Works — founded in 2012, we've grown from a handyman service to a nationwide commercial and residential maintenance company serving all 50 states." />
+  <meta property="og:title" content="About Strata Works" />
+  <meta property="og:description" content="The team behind every fix. 12 years, 17,000+ jobs, 50 states, and a 4.9-star rating." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/tokens.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="main-nav" aria-label="Main navigation">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__logo" aria-label="Strata Works home">
+      <img src="assets/logo.svg" alt="Strata Works" class="nav__logo-img" width="160" height="36" />
+    </a>
+    <ul class="nav__links" role="list">
+      <li><a href="commercial.html" class="nav__link">For Business</a></li>
+      <li><a href="residential.html" class="nav__link">For Home</a></li>
+      <li><a href="services.html" class="nav__link">Services</a></li>
+      <li><a href="pricing.html" class="nav__link">Pricing</a></li>
+      <li><a href="about.html" class="nav__link nav__link--active">About</a></li>
+    </ul>
+    <div class="nav__actions">
+      <a href="contact.html" class="btn btn--outline btn--sm">Get a Quote</a>
+      <a href="tel:+18005555678" class="btn btn--primary btn--sm">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.63 3.36 2 2 0 0 1 3.6 1.18h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.84a16 16 0 0 0 6.29 6.29l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        Call Now
+      </a>
+      <button class="nav__hamburger" id="nav-hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="nav__mobile" id="nav-mobile-menu" role="dialog" aria-label="Mobile navigation">
+  <div class="nav__mobile-links">
+    <a href="commercial.html" class="nav__mobile-link">For Business</a>
+    <a href="residential.html" class="nav__mobile-link">For Home</a>
+    <a href="services.html" class="nav__mobile-link">Services</a>
+    <a href="pricing.html" class="nav__mobile-link">Pricing</a>
+    <a href="how-it-works.html" class="nav__mobile-link">How It Works</a>
+    <a href="about.html" class="nav__mobile-link">About</a>
+    <a href="contact.html" class="nav__mobile-link">Contact</a>
+  </div>
+  <div class="nav__mobile-ctas">
+    <a href="contact.html" class="btn btn--navy btn--lg" style="width:100%;justify-content:center;">Get a Free Quote</a>
+    <a href="tel:+18005555678" class="btn btn--outline btn--lg" style="width:100%;justify-content:center;">📞 Call 1-800-555-5678</a>
+  </div>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero" aria-labelledby="page-hero-heading">
+  <div class="container">
+    <div class="page-hero__content">
+      <div class="section-label hero-enter hero-enter-1" style="color:rgba(255,255,255,0.65);">About Us</div>
+      <h1 class="page-hero__title hero-enter hero-enter-2" id="page-hero-heading">
+        The Team Behind<br /><span class="accent">Every Fix.</span>
+      </h1>
+      <p class="page-hero__subtitle hero-enter hero-enter-3">
+        Founded in 2012 and headquartered in Chicago, Strata Works has grown from a two-person handyman service into a nationwide maintenance company trusted by 1,200+ commercial clients and 15,000+ homeowners in all 50 states.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- OUR STORY -->
+<section class="section" aria-labelledby="story-heading">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--sp-16);align-items:center;">
+      <div>
+        <div class="section-label reveal">Our Story</div>
+        <h2 class="section-title reveal delay-1" id="story-heading">Built on a<br /><span class="accent">Simple Belief</span></h2>
+        <div style="display:flex;flex-direction:column;gap:var(--sp-5);margin-top:var(--sp-6);">
+          <p class="reveal delay-2" style="color:var(--c-text-muted);">Strata Works was founded in 2012 by David Chen, a licensed contractor who was frustrated with how fragmented and unreliable the property maintenance industry was. Property managers were juggling a dozen vendors. Homeowners were getting quotes that changed the moment a technician arrived. Nobody was taking accountability.</p>
+          <p class="reveal delay-3" style="color:var(--c-text-muted);">David started small — just a handyman service operating out of Chicago's North Side — with a simple promise: show up on time, charge the price you quoted, and stand behind your work. Word spread fast. Within three years, Strata Works had expanded to HVAC, electrical, and plumbing, and signed its first commercial maintenance contract with a 12-unit apartment complex.</p>
+          <p class="reveal delay-3" style="color:var(--c-text-muted);">Today, Strata Works operates nationwide with regional dispatch hubs across the country, a team of 400+ licensed technicians, and a technology platform that tracks every work order, every visit, and every guarantee in real time. Our mission hasn't changed: make property maintenance reliable, transparent, and completely stress-free for every client we serve.</p>
+        </div>
+      </div>
+      <div class="reveal-right">
+        <div style="background:var(--c-navy);border-radius:var(--radius-xl);padding:var(--sp-10);color:#fff;box-shadow:var(--shadow-xl);">
+          <div style="font-size:var(--fs-sm);color:rgba(255,255,255,0.5);font-weight:600;letter-spacing:0.06em;text-transform:uppercase;margin-bottom:var(--sp-8);">By the Numbers</div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--sp-8);">
+            <div>
+              <div style="font-size:var(--fs-4xl);font-weight:800;color:var(--c-orange);line-height:1;">12</div>
+              <div style="font-size:var(--fs-sm);color:rgba(255,255,255,0.7);margin-top:4px;">Years in business</div>
+            </div>
+            <div>
+              <div style="font-size:var(--fs-4xl);font-weight:800;color:var(--c-orange);line-height:1;">17K+</div>
+              <div style="font-size:var(--fs-sm);color:rgba(255,255,255,0.7);margin-top:4px;">Jobs completed</div>
+            </div>
+            <div>
+              <div style="font-size:var(--fs-4xl);font-weight:800;color:var(--c-orange);line-height:1;">50</div>
+              <div style="font-size:var(--fs-sm);color:rgba(255,255,255,0.7);margin-top:4px;">States served</div>
+            </div>
+            <div>
+              <div style="font-size:var(--fs-4xl);font-weight:800;color:var(--c-orange);line-height:1;">4.9★</div>
+              <div style="font-size:var(--fs-sm);color:rgba(255,255,255,0.7);margin-top:4px;">Average Google rating</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OUR VALUES -->
+<section class="section section--soft" aria-labelledby="values-heading">
+  <div class="container">
+    <div class="text-center" style="margin-bottom:var(--sp-12);">
+      <div class="section-label reveal">What We Stand For</div>
+      <h2 class="section-title reveal delay-1" id="values-heading">Our <span class="accent">Core Values</span></h2>
+      <p class="section-subtitle reveal delay-2">These aren't words on a wall. They're the standards we hold ourselves and every technician to on every single job.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:var(--sp-6);">
+      <div class="reveal delay-1" style="background:#fff;border-radius:var(--radius-xl);padding:var(--sp-8);box-shadow:var(--shadow-sm);border:1px solid var(--c-border);">
+        <div style="width:52px;height:52px;background:rgba(15,43,82,0.08);border-radius:var(--radius-lg);display:flex;align-items:center;justify-content:center;margin-bottom:var(--sp-5);">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="var(--c-navy)" stroke-width="2" width="24" height="24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <div style="font-size:var(--fs-lg);font-weight:700;color:var(--c-navy);margin-bottom:var(--sp-3);">Reliability</div>
+        <p style="color:var(--c-text-muted);font-size:var(--fs-sm);">We show up on time, every time. No cancellations without same-day rescheduling. No excuses — just accountability.</p>
+      </div>
+      <div class="reveal delay-2" style="background:#fff;border-radius:var(--radius-xl);padding:var(--sp-8);box-shadow:var(--shadow-sm);border:1px solid var(--c-border);">
+        <div style="width:52px;height:52px;background:rgba(15,43,82,0.08);border-radius:var(--radius-lg);display:flex;align-items:center;justify-content:center;margin-bottom:var(--sp-5);">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="var(--c-navy)" stroke-width="2" width="24" height="24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+        </div>
+        <div style="font-size:var(--fs-lg);font-weight:700;color:var(--c-navy);margin-bottom:var(--sp-3);">Quality</div>
+        <p style="color:var(--c-text-muted);font-size:var(--fs-sm);">Every job is done right the first time, backed by our 90-day labor guarantee. We don't cut corners — period.</p>
+      </div>
+      <div class="reveal delay-3" style="background:#fff;border-radius:var(--radius-xl);padding:var(--sp-8);box-shadow:var(--shadow-sm);border:1px solid var(--c-border);">
+        <div style="width:52px;height:52px;background:rgba(15,43,82,0.08);border-radius:var(--radius-lg);display:flex;align-items:center;justify-content:center;margin-bottom:var(--sp-5);">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="var(--c-navy)" stroke-width="2" width="24" height="24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+        </div>
+        <div style="font-size:var(--fs-lg);font-weight:700;color:var(--c-navy);margin-bottom:var(--sp-3);">Transparency</div>
+        <p style="color:var(--c-text-muted);font-size:var(--fs-sm);">Upfront pricing, clear communication, and documented work orders. You always know what's happening and what it costs.</p>
+      </div>
+      <div class="reveal delay-4" style="background:#fff;border-radius:var(--radius-xl);padding:var(--sp-8);box-shadow:var(--shadow-sm);border:1px solid var(--c-border);">
+        <div style="width:52px;height:52px;background:rgba(15,43,82,0.08);border-radius:var(--radius-lg);display:flex;align-items:center;justify-content:center;margin-bottom:var(--sp-5);">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="var(--c-navy)" stroke-width="2" width="24" height="24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <div style="font-size:var(--fs-lg);font-weight:700;color:var(--c-navy);margin-bottom:var(--sp-3);">Safety</div>
+        <p style="color:var(--c-text-muted);font-size:var(--fs-sm);">Licensed, insured, and OSHA-certified. Background-checked technicians. $5M liability coverage on every job.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- THE TEAM -->
+<section class="section" aria-labelledby="team-heading">
+  <div class="container">
+    <div class="text-center" style="margin-bottom:var(--sp-12);">
+      <div class="section-label reveal">Leadership</div>
+      <h2 class="section-title reveal delay-1" id="team-heading">Meet <span class="accent">The Team</span></h2>
+      <p class="section-subtitle reveal delay-2">The people who built Strata Works and run it every day.</p>
+    </div>
+    <div class="grid-3" style="max-width:900px;margin:0 auto;">
+
+      <div class="reveal delay-1" style="text-align:center;background:#fff;border-radius:var(--radius-xl);padding:var(--sp-8);box-shadow:var(--shadow-sm);border:1px solid var(--c-border);">
+        <div style="width:80px;height:80px;background:var(--c-navy);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:var(--fs-xl);font-weight:800;margin:0 auto var(--sp-5);">DC</div>
+        <div style="font-size:var(--fs-lg);font-weight:700;color:var(--c-navy);">David Chen</div>
+        <div style="color:var(--c-orange);font-weight:600;font-size:var(--fs-sm);margin-bottom:var(--sp-4);">CEO &amp; Founder</div>
+        <p style="color:var(--c-text-muted);font-size:var(--fs-sm);">Licensed contractor with 20+ years in commercial and residential maintenance. David founded Strata Works in 2012 after seeing firsthand how broken the property maintenance industry was. He still personally reviews every client onboarding and reads every 1-star review.</p>
+      </div>
+
+      <div class="reveal delay-2" style="text-align:center;background:#fff;border-radius:var(--radius-xl);padding:var(--sp-8);box-shadow:var(--shadow-sm);border:1px solid var(--c-border);">
+        <div style="width:80px;height:80px;background:var(--c-navy);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:var(--fs-xl);font-weight:800;margin:0 auto var(--sp-5);">MR</div>
+        <div style="font-size:var(--fs-lg);font-weight:700;color:var(--c-navy);">Maria Rodriguez</div>
+        <div style="color:var(--c-orange);font-weight:600;font-size:var(--fs-sm);margin-bottom:var(--sp-4);">VP Operations</div>
+        <p style="color:var(--c-text-muted);font-size:var(--fs-sm);">Maria joined Strata Works in 2015 after a decade in facilities management for a Fortune 500 retailer. She built our dispatch and technician training systems from the ground up. Under her leadership, average response times dropped by 40% and customer satisfaction scores hit an all-time high.</p>
+      </div>
+
+      <div class="reveal delay-3" style="text-align:center;background:#fff;border-radius:var(--radius-xl);padding:var(--sp-8);box-shadow:var(--shadow-sm);border:1px solid var(--c-border);">
+        <div style="width:80px;height:80px;background:var(--c-navy);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:var(--fs-xl);font-weight:800;margin:0 auto var(--sp-5);">KW</div>
+        <div style="font-size:var(--fs-lg);font-weight:700;color:var(--c-navy);">Kevin Walsh</div>
+        <div style="color:var(--c-orange);font-weight:600;font-size:var(--fs-sm);margin-bottom:var(--sp-4);">Head of Commercial</div>
+        <p style="color:var(--c-text-muted);font-size:var(--fs-sm);">Kevin leads our commercial division with 15 years of property management experience across multifamily, retail, and hospitality. He personally oversees the onboarding of every new commercial client and manages our enterprise account relationships. Kevin's team grew commercial revenue 3x in three years.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- LICENSES & CERTIFICATIONS -->
+<section class="section section--soft" aria-labelledby="certs-heading">
+  <div class="container" style="max-width:760px;">
+    <div class="text-center" style="margin-bottom:var(--sp-10);">
+      <div class="section-label reveal">Credentials</div>
+      <h2 class="section-title reveal delay-1" id="certs-heading">Licenses &amp; <span class="accent">Certifications</span></h2>
+      <p class="section-subtitle reveal delay-2">We maintain the highest level of licensing, insurance, and professional certification — so you never have to wonder.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--sp-5);">
+      <div class="reveal delay-1" style="display:flex;gap:var(--sp-4);align-items:flex-start;background:#fff;border-radius:var(--radius-lg);padding:var(--sp-5);border:1px solid var(--c-border);">
+        <span style="color:var(--c-orange);font-size:var(--fs-xl);flex-shrink:0;line-height:1.2;">✓</span>
+        <div>
+          <div style="font-weight:700;color:var(--c-navy);font-size:var(--fs-sm);">Licensed contractor in all 50 states</div>
+          <div style="color:var(--c-text-muted);font-size:var(--fs-xs);margin-top:2px;">State-specific trade licenses for all applicable trades</div>
+        </div>
+      </div>
+      <div class="reveal delay-2" style="display:flex;gap:var(--sp-4);align-items:flex-start;background:#fff;border-radius:var(--radius-lg);padding:var(--sp-5);border:1px solid var(--c-border);">
+        <span style="color:var(--c-orange);font-size:var(--fs-xl);flex-shrink:0;line-height:1.2;">✓</span>
+        <div>
+          <div style="font-weight:700;color:var(--c-navy);font-size:var(--fs-sm);">EPA 608 Certified</div>
+          <div style="color:var(--c-text-muted);font-size:var(--fs-xs);margin-top:2px;">All HVAC technicians hold EPA 608 universal certification</div>
+        </div>
+      </div>
+      <div class="reveal delay-1" style="display:flex;gap:var(--sp-4);align-items:flex-start;background:#fff;border-radius:var(--radius-lg);padding:var(--sp-5);border:1px solid var(--c-border);">
+        <span style="color:var(--c-orange);font-size:var(--fs-xl);flex-shrink:0;line-height:1.2;">✓</span>
+        <div>
+          <div style="font-weight:700;color:var(--c-navy);font-size:var(--fs-sm);">OSHA 10 &amp; 30 Certified Technicians</div>
+          <div style="color:var(--c-text-muted);font-size:var(--fs-xs);margin-top:2px;">All field technicians complete OSHA safety training</div>
+        </div>
+      </div>
+      <div class="reveal delay-2" style="display:flex;gap:var(--sp-4);align-items:flex-start;background:#fff;border-radius:var(--radius-lg);padding:var(--sp-5);border:1px solid var(--c-border);">
+        <span style="color:var(--c-orange);font-size:var(--fs-xl);flex-shrink:0;line-height:1.2;">✓</span>
+        <div>
+          <div style="font-weight:700;color:var(--c-navy);font-size:var(--fs-sm);">BBB A+ Rated</div>
+          <div style="color:var(--c-text-muted);font-size:var(--fs-xs);margin-top:2px;">Accredited member of the Better Business Bureau</div>
+        </div>
+      </div>
+      <div class="reveal delay-1" style="display:flex;gap:var(--sp-4);align-items:flex-start;background:#fff;border-radius:var(--radius-lg);padding:var(--sp-5);border:1px solid var(--c-border);">
+        <span style="color:var(--c-orange);font-size:var(--fs-xl);flex-shrink:0;line-height:1.2;">✓</span>
+        <div>
+          <div style="font-weight:700;color:var(--c-navy);font-size:var(--fs-sm);">4.9★ on Google (2,400+ reviews)</div>
+          <div style="color:var(--c-text-muted);font-size:var(--fs-xs);margin-top:2px;">Verified customer reviews across all markets</div>
+        </div>
+      </div>
+      <div class="reveal delay-2" style="display:flex;gap:var(--sp-4);align-items:flex-start;background:#fff;border-radius:var(--radius-lg);padding:var(--sp-5);border:1px solid var(--c-border);">
+        <span style="color:var(--c-orange);font-size:var(--fs-xl);flex-shrink:0;line-height:1.2;">✓</span>
+        <div>
+          <div style="font-weight:700;color:var(--c-navy);font-size:var(--fs-sm);">Angi Super Service Award 2023</div>
+          <div style="color:var(--c-text-muted);font-size:var(--fs-xs);margin-top:2px;">Recognized for exceptional customer satisfaction on Angi</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA STRIP -->
+<section class="cta-strip" aria-labelledby="about-cta-heading">
+  <div class="container">
+    <div style="max-width:640px;">
+      <div class="section-label" style="color:rgba(255,255,255,0.5);margin-bottom:var(--sp-4);">Work With Us</div>
+      <h2 class="section-title" id="about-cta-heading">Ready to Experience<br /><span style="color:var(--c-orange);">Maintenance Done Right?</span></h2>
+      <p class="section-subtitle">Get a free quote for residential or commercial service. Our team responds within 24 hours.</p>
+      <div class="cta-strip__actions">
+        <a href="contact.html" class="btn btn--primary btn--lg">Get a Quote <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></a>
+        <a href="tel:+18005555678" class="btn btn--outline-white btn--lg">📞 1-800-555-5678</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <div class="footer__logo">
+          <div class="footer__logo-name">Strata<span>Works</span></div>
+        </div>
+        <p class="footer__desc">Professional maintenance services for commercial properties and homes across the United States. Licensed, insured, and available 24/7.</p>
+      </div>
+      <div>
+        <div class="footer__col-title">Commercial</div>
+        <div class="footer__links">
+          <a href="commercial.html" class="footer__link">Overview</a>
+          <a href="commercial.html#hvac" class="footer__link">HVAC</a>
+          <a href="commercial.html#electrical" class="footer__link">Electrical</a>
+          <a href="commercial.html#plumbing" class="footer__link">Plumbing</a>
+          <a href="commercial.html#contracts" class="footer__link">PM Contracts</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer__col-title">Residential</div>
+        <div class="footer__links">
+          <a href="residential.html" class="footer__link">Overview</a>
+          <a href="residential.html#handyman" class="footer__link">Handyman</a>
+          <a href="residential.html#plumbing" class="footer__link">Plumbing</a>
+          <a href="pricing.html" class="footer__link">Home Plans</a>
+          <a href="residential.html#cleaning" class="footer__link">Cleaning</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer__col-title">Company</div>
+        <div class="footer__links">
+          <a href="about.html" class="footer__link">About Us</a>
+          <a href="how-it-works.html" class="footer__link">How It Works</a>
+          <a href="pricing.html" class="footer__link">Pricing</a>
+          <a href="contact.html" class="footer__link">Contact</a>
+        </div>
+        <div style="margin-top:var(--sp-5);">
+          <div class="footer__col-title">Emergency</div>
+          <a href="tel:+18005555678" style="color:var(--c-orange);font-weight:700;font-size:var(--fs-base);">1-800-555-5678</a>
+          <div style="font-size:var(--fs-xs);color:rgba(255,255,255,0.4);margin-top:2px;">Available 24/7</div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div>© 2025 Strata Works LLC. All rights reserved.</div>
+      <div class="footer__bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Sitemap</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/contact-widget.js"></script>
+</body>
+</html>

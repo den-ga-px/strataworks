@@ -1,0 +1,66 @@
+/* =========================================
+   STRATA WORKS — Animations
+   ========================================= */
+
+/* Reveal classes */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.55s var(--ease-out), transform 0.55s var(--ease-out);
+}
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-32px);
+  transition: opacity 0.6s var(--ease-out), transform 0.6s var(--ease-out);
+}
+.reveal-right {
+  opacity: 0;
+  transform: translateX(32px);
+  transition: opacity 0.6s var(--ease-out), transform 0.6s var(--ease-out);
+}
+.reveal-scale {
+  opacity: 0;
+  transform: scale(0.94);
+  transition: opacity 0.5s var(--ease-out), transform 0.5s var(--ease-out);
+}
+.revealed {
+  opacity: 1;
+  transform: none;
+}
+.delay-1 { transition-delay: 80ms; }
+.delay-2 { transition-delay: 160ms; }
+.delay-3 { transition-delay: 240ms; }
+.delay-4 { transition-delay: 320ms; }
+.delay-5 { transition-delay: 400ms; }
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal, .reveal-left, .reveal-right, .reveal-scale {
+    opacity: 1 !important; transform: none !important; transition: none !important;
+  }
+}
+
+/* Keyframes */
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: none; }
+}
+@keyframes fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes slide-in-right {
+  from { opacity: 0; transform: translateX(40px); }
+  to   { opacity: 1; transform: none; }
+}
+@keyframes pulse-ring {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(249,115,22,0.4); }
+  50%       { box-shadow: 0 0 0 10px rgba(249,115,22,0); }
+}
+
+/* Hero entrance */
+.hero-enter { animation: fade-up 0.7s var(--ease-out) both; }
+.hero-enter-1 { animation-delay: 0.1s; }
+.hero-enter-2 { animation-delay: 0.2s; }
+.hero-enter-3 { animation-delay: 0.35s; }
+.hero-enter-4 { animation-delay: 0.5s; }
+.hero-enter-5 { animation-delay: 0.65s; }

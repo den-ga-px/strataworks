@@ -1,0 +1,15 @@
+{
+  "name": "strataworks",
+  "version": "1.0.0",
+  "description": "Strata Works — Commercial & Residential Maintenance Services",
+  "scripts": {
+    "start": "serve . --listen $PORT --single",
+    "dev": "serve . --listen 8098"
+  },
+  "dependencies": {
+    "serve": "^14.2.6"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
